@@ -1,20 +1,24 @@
 ---
+import List from "./List.astro";
 import Pie from "./Pie.astro";
 ---
 
 <div
-  class="mx-14 md:mx-20 mb-24 flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center gap-4 lg:gap-12"
+  class="mx-14 md:mx-20 mb-24 flex flex-col gap-4 lg:gap-12"
 >
-  <div class="flex-1 max-w-lg">
+  <div class="flex-1 max-w-7xl">
     <h2
       class="uppercase font-semibold text-primary-1 text-3xl md:text-4xl mb-6"
     >
       Our Services
     </h2>
-    <p class="mb-12">
+    <p class="mb-12 text-2xl">
       We provide comprehensive and strategic recommendations informed by the Quintuple Aim framework, which are the key ingredients to delivering exceptional health care
     </p>
   </div>
 
-  <Pie />
+  <div class="flex flex-col md:flex-row gap-6 md:gap-12 content-center items-center">
+    <Pie />
+    <List />
+  </div>
 </div>

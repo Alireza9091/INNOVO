@@ -1,0 +1,46 @@
+---
+import Section from "./Section.astro"
+const services = [
+  {title: "Healthcare Marketing & Engagement",
+    content: [
+      "Patient/provider journey mapping",
+      "Marketing and branding strategy development",
+      "Community outreach program creation and implementation"
+    ]
+  },
+  {title: "Business Development",
+    content: [
+      "Strategic planning",
+      "Market analysis",
+      "Workflow redesign and process optimization"
+    ]
+  },
+  {title: "Quality Improvement",
+    content: [
+      "Measurement and reporting system design and implementation",
+      "Clinical workflow development",
+      "Patient safety initiative support"
+    ]
+  },
+  {title: "Investment Strategy & Due Diligence",
+    content: [
+      "Financial planning/analysis",
+      "Capital raising support, including pitch deck support",
+      "Investment strategy development",
+      "Product-market fit verification"
+    ]
+  },
+  {title: "Regulatory compliance",
+    content: [
+      "PHIPA compliance",
+      "Health Canada submission preparation",
+      "Policy and procedure development"
+    ]
+  }
+]
+
+---
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+  {services.map(service => <Section title={service.title} contents={service.content}/>)}
+</section>
