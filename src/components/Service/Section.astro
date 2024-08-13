@@ -1,0 +1,12 @@
+---
+const {title, contents} = Astro.props
+---
+
+<article>
+  <h3 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+    {title}
+  </h3>
+  <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+    {contents.map(c => <li>{c}</li>)}
+  </ul>
+</article>
